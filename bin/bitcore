@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var bitcore = require('bitcore-node-zula/lib/cli/bitcore');
+var path = require('path');
+var servicesPath = path.resolve(__dirname, '../');
+var additionalServices = ['insight-api-zula', 'insight-ui-zula'];
+bitcore(servicesPath, additionalServices);
